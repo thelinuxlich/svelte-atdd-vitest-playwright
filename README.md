@@ -23,7 +23,7 @@ A template for Acceptance-Test-Driven Development with Sveltekit (opinionated, s
 
 ## Notes
 
-- Features are in packages/dash/features
-- There is a simple DB schema in migrations/initial_schema.sql
+- Features are in `packages/dash/features`
+- There is a simple DB schema in `migrations/initial_schema.sql`
 - When looking at the tests implementation, you might wonder why we are uppercasing the ATDD vars returned by `test`. That's solely for the Cucumber VSCode extension to "glue" the test with its feature so you use "Go to Definition" and see which steps are not implemented yet
 - You can generate the steps code from the feature by selecting the feature text, right-click and choose "Generate code from feature", very useful!
