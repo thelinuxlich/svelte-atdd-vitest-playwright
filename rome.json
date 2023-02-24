@@ -1,0 +1,42 @@
+{
+  "files": {
+    "maxSize": 8290304
+  },
+  "formatter": {
+    "enabled": true,
+    "ignore": ["*.js","tsconfig.json"],
+    "formatWithErrors": true,
+    "lineWidth": 120
+  },
+  "linter": {
+    "enabled": true,
+    "ignore": ["*.js","*.json"],
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noUnusedVariables": "error"
+      },
+      "style": {
+        "noNegationElse": "error",
+        "useBlockStatements": "error",
+        "useShorthandArrayType": "error",
+        "useSingleCaseStatement": "error",
+        "noShoutyConstants": "error" 
+      },
+      "nursery": {
+        "recommended": true,
+        "noBannedTypes": "error",
+        "noConditionalAssignment": "error",
+        "noDuplicateObjectKeys": "error",
+        "noExtraNonNullAssertion": "error",
+        "noStringCaseMismatch": "error",
+        "noUnsafeFinally": "error",
+        "noVar":"error",
+        "useConst":"error",
+        "useDefaultParameterLast":"error",
+        "useDefaultSwitchClauseLast":"error",
+        "useExponentiationOperator":"error"
+      }
+    }
+  }
+}

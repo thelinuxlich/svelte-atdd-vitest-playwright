@@ -1,0 +1,30 @@
+{
+	"name": "svelte-atdd-vitest-playwright",
+	"private": true,
+	"version": "1.0.0",
+	"description": "A template for Acceptance-Test-Driven Development with Sveltekit",
+	"scripts": {
+		"preinstall": "only-allow pnpm",
+		"test": "pnpm run -r test",
+		"check": "pnpm run -r check",
+		"reset:testdb": "NODE_ENV=test graphile-migrate reset --erase"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thelinuxlich/svelte-atdd-vitest-playwright"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/thelinuxlich/svelte-atdd-vitest-playwright/issues"
+	},
+	"homepage": "https://github.com/thelinuxlich/svelte-atdd-vitest-playwright#readme",
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"only-allow": "^1.1.1"
+	},
+	"devDependencies": {
+		"graphile-migrate": "^1.4.1",
+		"rome": "^11.0.0"
+	}
+}
