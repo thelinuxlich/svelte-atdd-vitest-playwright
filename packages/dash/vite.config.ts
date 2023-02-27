@@ -8,5 +8,6 @@ export default defineConfig({
 		globals: true,
 		forceRerunTriggers: ["**/features/**/*.feature"],
 		globalSetup: ["./viteInstance.ts"],
+		setupFiles: ["./resetDB.ts"],
 	},
 });

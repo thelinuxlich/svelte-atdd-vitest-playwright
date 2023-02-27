@@ -1,0 +1,2 @@
+CREATE DATABASE test;
+CREATE DATABASE test_shadow;
