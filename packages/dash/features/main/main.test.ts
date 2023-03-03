@@ -1,5 +1,8 @@
 import { chromium, Browser, Page, expect } from "@playwright/test";
-import { defineFeature, loadFeature } from "jest-cucumber";
+import { loadFeature } from "jest-cucumber/src/index";
+import { createDefineFeature } from "jest-cucumber/src/feature-definition-creation";
+import { test, describe } from "vitest";
+const defineFeature = createDefineFeature({ test, describe });
 const feature = loadFeature("./main.feature", { loadRelativePath: true });
 let browser: Browser;
 let page: Page;

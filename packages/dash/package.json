@@ -6,7 +6,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"test": "vitest",
+		"test": "pnpm run -w reset:testdb && pnpm run build && vitest",
 		"coverage": "vitest --coverage",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
@@ -18,7 +18,7 @@
 		"@vitest/coverage-c8": "^0.28.5",
 		"autoprefixer": "^10.4.7",
 		"graphile-migrate": "^1.4.1",
-		"jest-cucumber": "^3.0.1",
+		"jest-cucumber": "bencompton/jest-cucumber#master",
 		"postcss": "^8.4.14",
 		"postcss-load-config": "^4.0.1",
 		"svelte": "^3.55.1",

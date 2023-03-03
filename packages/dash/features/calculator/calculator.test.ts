@@ -1,5 +1,7 @@
-import { defineFeature, loadFeature } from "jest-cucumber";
-import { expect } from "vitest";
+import { loadFeature } from "jest-cucumber/src/index";
+import { createDefineFeature } from "jest-cucumber/src/feature-definition-creation";
+import { expect, test, describe } from "vitest";
+const defineFeature = createDefineFeature({ test, describe });
 const feature = loadFeature("./calculator.feature", { loadRelativePath: true });
 
 defineFeature(feature, (test) => {
