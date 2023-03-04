@@ -7,7 +7,7 @@ A template for Acceptance-Test-Driven Development with Sveltekit (opinionated, s
 - Install PNPM: `wget -qO- https://get.pnpm.io/install.sh | sh -`
 - Install Docker and Docker Compose
 - Install VSCode
-- Install VSCode extensions: Cucumber, Jest-cucumber code generator, Rome, Svelte for VS Code and Svelte Intellisense
+- Install VSCode extensions: Cucumber Gherkin (Full Support), Jest-cucumber code generator, Rome, Svelte for VS Code and Svelte Intellisense
 - Go to VSCode settings, type "Formatter" in the search input and change the Default Formatter to Rome
 - Restart VSCode
 - Run `pnpm i` on the project root to install all dependencies
@@ -21,5 +21,5 @@ A template for Acceptance-Test-Driven Development with Sveltekit (opinionated, s
 
 - Features are in `packages/dash/features`
 - There is a simple DB schema in `migrations/initial_schema.sql`
-- When looking at the tests implementation, you might wonder why we are uppercasing the ATDD vars returned by `test`. That's solely for the Cucumber VSCode extension to "glue" the test with its feature so you use "Go to Definition" and see which steps are not implemented yet
 - You can generate the steps code from the feature by selecting the feature text, right-click and choose "Generate code from feature", very useful!
+- Look at .vscode/settings.json for some useful VSCode settings
